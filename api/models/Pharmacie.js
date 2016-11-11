@@ -9,6 +9,15 @@ module.exports = {
 
   attributes: {
 
+    meta: {
+      schemaName: 'public'
+    },
+
+
+
+
+
+
   }
 };
 

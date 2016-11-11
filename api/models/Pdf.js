@@ -9,6 +9,36 @@ module.exports = {
 
   attributes: {
 
+
+    meta: {
+      schemaName: 'public'
+    },
+
+    id_pdf: {
+
+      type : 'integer',
+      required : 'true'
+    },
+
+    path: {
+
+      type : 'string',
+      required : 'true'
+    },
+
+    type: {
+
+      type : 'string',
+      required : 'true'
+    },
+
+    nom_pdf: {
+
+      type : 'string',
+      required : 'true'
+    }
+
+
   }
 };
 
