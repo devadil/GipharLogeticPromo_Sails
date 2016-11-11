@@ -7,16 +7,19 @@
 
 module.exports = {
 
+
+  meta: {
+    schemaName: 'public'
+  },
+
   attributes: {
 
-
-    meta: {
-      schemaName: sails.myconfig.sherma
-    },
 
     id_pdf: {
 
       type: 'integer',
+      autoIncrement: true,
+      primaryKey: true,
       required: 'true'
     },
 
@@ -36,9 +39,11 @@ module.exports = {
 
       type: 'string',
       required: 'true'
+    },
+
+    promo: {
+      model: 'promo'
     }
-
-
   }
 };
 

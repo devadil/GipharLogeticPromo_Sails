@@ -20,7 +20,7 @@ module.exports.myconfig = {
   /*** DATABASE PROPORTY ***/
 
   host :'localhost',
-  sherma : 'public',
+  shema : 'public',
   user :'postgres',
   password : 'sherine2011',
   database : 'Logetic'

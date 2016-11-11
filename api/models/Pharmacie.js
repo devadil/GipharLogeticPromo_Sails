@@ -6,16 +6,34 @@
  */
 
 module.exports = {
+  meta: {
+    schemaName: 'public'
+  },
+
 
   attributes: {
 
-    meta: {
-      schemaName: 'public'
+
+
+
+    finess: {
+
+      type: 'string',
+      required: true,
+      primaryKey: true
     },
 
+    lib: {
 
+      type: 'string',
+      required: true,
 
+    },
 
+    promos: {
+      collection: 'promo',
+      via: 'pharmacies'
+    }
 
 
   }

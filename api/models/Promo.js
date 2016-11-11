@@ -7,51 +7,61 @@
 
 module.exports = {
 
+  meta: {
+    schemaName: 'public'
+  },
+
+
   attributes: {
 
-    meta: {
-      schemaName: sails.myconfig.sherma
-    },
 
-    id_promo : {
+    id_promo: {
 
-      type : 'integer' ,
-      required :'true'
-
-    },
-
-    lib : {
-
-      type : 'string' ,
-      required :'true'
+      type: 'integer',
+      autoIncrement: true,
+      primaryKey: true,
+      required: 'true'
 
     },
 
-    date_deb : {
+    lib: {
 
-      type : 'date' ,
-      required :'true'
-
-    },
-
-    date_fin : {
-
-      type : 'date' ,
-      required :'true'
+      type: 'string',
+      required: 'true'
 
     },
 
-    pdf : {
+    date_deb: {
 
-      model : 'Pdf' ,
-      required :'true'
+      type: 'date',
+      required: 'true'
 
+    },
+
+    date_fin: {
+
+      type: 'date',
+      required: 'true'
+
+    },
+
+    pdf: {
+
+      model: 'pdf',
+
+    },
+
+    produits: {
+      collection: 'produit',
+      via: 'promos',
+      through: 'promo_produit'
+    },
+
+    pharmacies: {
+      collection: 'pharmacie',
+      via: 'promos',
+      through: 'promo_pharmacie'
     }
-
-
-
-
-
 
 
   }

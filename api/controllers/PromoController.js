@@ -7,9 +7,19 @@
 
 module.exports = {
 
-  listePromos : function (req, res , next) {
+  Liste_Promos: function (req, res, next) {
 
-    res.view() ;
+    Promo.find(function AllPromos(err, promos) {
+
+      if (err) return next(err);
+      if (!promos) return next;
+
+      res.view({
+        promos: promos
+      });
+
+    });
+
 
   }
 

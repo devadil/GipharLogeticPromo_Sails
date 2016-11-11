@@ -7,14 +7,34 @@
 
 module.exports = {
 
+  meta: {
+    schemaName: 'public'
+  },
+
+
   attributes: {
 
-    meta: {
-      schemaName: 'public'
+
+
+    cip: {
+
+      type: 'string',
+      required: true,
+      size: 13,
+      primaryKey: true
     },
 
+    lib: {
 
+      type: 'string',
+      required: true,
 
+    },
+
+    promos : {
+      collection : 'promo',
+      via : 'produits'
+    }
   }
 };
 
