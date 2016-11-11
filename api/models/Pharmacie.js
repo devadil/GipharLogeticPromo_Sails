@@ -32,7 +32,8 @@ module.exports = {
 
     promos: {
       collection: 'promo',
-      via: 'pharmacies'
+      via: 'pha',
+      through: 'promo_pharmacie'
     }
 
 

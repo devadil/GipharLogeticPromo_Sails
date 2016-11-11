@@ -53,13 +53,13 @@ module.exports = {
 
     produits: {
       collection: 'produit',
-      via: 'promos',
+      via: 'pr',
       through: 'promo_produit'
     },
 
     pharmacies: {
       collection: 'pharmacie',
-      via: 'promos',
+      via: 'pr',
       through: 'promo_pharmacie'
     }
 

@@ -15,7 +15,6 @@ module.exports = {
   attributes: {
 
 
-
     cip: {
 
       type: 'string',
@@ -31,9 +30,10 @@ module.exports = {
 
     },
 
-    promos : {
-      collection : 'promo',
-      via : 'produits'
+    promos: {
+      collection: 'promo',
+      via: 'pro',
+      through: 'promo_produit'
     }
   }
 };

@@ -9,6 +9,16 @@ module.exports = {
 
   attributes: {
 
+    pr: {
+      model: 'promo',
+      columnName: 'id_promo',
+    },
+    pro: {
+      model: 'produit' ,
+      columnName: 'cip'
+    }
+
+
   }
 };
 
