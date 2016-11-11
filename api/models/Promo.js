@@ -10,7 +10,7 @@ module.exports = {
   attributes: {
 
     meta: {
-      schemaName: 'public'
+      schemaName: sails.myconfig.sherma
     },
 
     id_promo : {

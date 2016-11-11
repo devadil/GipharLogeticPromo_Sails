@@ -6,6 +6,12 @@
  */
 
 module.exports = {
-	
+
+  listePromos : function (req, res , next) {
+
+    res.view() ;
+
+  }
+
 };
 

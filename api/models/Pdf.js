@@ -11,31 +11,31 @@ module.exports = {
 
 
     meta: {
-      schemaName: 'public'
+      schemaName: sails.myconfig.sherma
     },
 
     id_pdf: {
 
-      type : 'integer',
-      required : 'true'
+      type: 'integer',
+      required: 'true'
     },
 
     path: {
 
-      type : 'string',
-      required : 'true'
+      type: 'string',
+      required: 'true'
     },
 
     type: {
 
-      type : 'string',
-      required : 'true'
+      type: 'string',
+      required: 'true'
     },
 
     nom_pdf: {
 
-      type : 'string',
-      required : 'true'
+      type: 'string',
+      required: 'true'
     }
 
 

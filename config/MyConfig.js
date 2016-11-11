@@ -22,6 +22,6 @@ module.exports.myconfig = {
   host :'localhost',
   sherma : 'public',
   user :'postgres',
-  password : 'sherine2011'
-
+  password : 'sherine2011',
+  database : 'Logetic'
 }
